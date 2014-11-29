@@ -5,7 +5,9 @@ Built with Bones, Making Comics focuses primarily on archival structure
 for a simple and intuitive user experience while drilling for 
 deep content.
 
-Designed and developed by **Mark Luetke**: http://luetkemj.com
+Designed and [Mark Luetke](http://luetkemj.com) and [Patrick Yurick](http://www.theheadcomic.com/)
+
+Developed by [Mark Luetke](http://luetkemj.com)
 
 # Bones
 __A Lightweight Wordpress Development Theme__
@@ -33,7 +35,6 @@ https://github.com/eddiemachado/bones/issues
 __[WTFPL](http://sam.zoy.org/wtfpl/)__
 
 	Are You Serious? Yes.
-
 
 ## Meta
 * [Changelog](../../blob/master/CHANGELOG.md)
