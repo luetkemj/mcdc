@@ -42,13 +42,13 @@ HEADER STYLES
 		font-size: .5em;
 	}
 
-background-image: url(../images/_dev/2816-header.png);
-@include background-size(cover);
+// background-image: url(../images/_dev/2816-header.png);
+// @include background-size(cover);
 
 	.logo {
 		
 		a{
-			@include use-sprite('widelogo2');
+			// @include use-sprite('widelogo2');
 			background-repeat: no-repeat;
 			position: relative;
 			left: -6px;
@@ -73,7 +73,7 @@ nav{
 	}
 
 	&.topnav{
-		margin-bottom: 8px;
+		margin-bottom: 19px;
 		padding-bottom: 0px;
 		min-height: 0px;
 		margin-top: -4px;

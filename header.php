@@ -46,31 +46,10 @@
 
 		<div id="container">
 
-<?php
-	$header_bg_images = ot_get_option( 'header_image' ); 
-	if ($header_bg_images){
-		shuffle($header_bg_images);
-	}
-?>
-			<header class="header" role="banner" <?php if ($header_bg_images){ ?>style="background-image:url(' <?php echo $header_bg_images[0]['image']; } ?>')">
-
-
-<?php if ($header_bg_images[0]['artist']) { ?>			
-	
-	<div class="banner-credit">
-	<?php if ($header_bg_images[0]['website']) { ?>	
-		<a href="<?php echo  $header_bg_images[0]['website']; ?>" target="_blank">image credit: <?php echo  $header_bg_images[0]['artist']; ?><a>
-	<?php } else { ?>	
-		image credit: <?php echo  $header_bg_images[0]['artist']; ?>
-	<?php } ?>
-	</div>
-
-<?php } ?>
-
+			<header class="header" role="banner" >
 
 				<div id="inner-header" class="clearfix">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="container-logo gradient">
 
 					<nav role="navigation" class="topnav">
@@ -82,20 +61,6 @@
 							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a>
 						</div>
 					</div>
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation" class="mainnav">
-						<button class="mainnavbtn lsf">menu</button>
-						<?php bones_main_nav(); ?>
-						<ul class="social">
-							<li class="lsf"><a href="https://plus.google.com/+Makingcomics" target="_blank">Google+</a></li>
-							<li class="lsf"><a href="https://www.facebook.com/makingcomics" target="_blank">Facebook</a></li>
-							<li class="lsf"><a href="https://twitter.com/Making_Comics" target="_blank">Twitter</a></li>
-							<li class="lsf"><a href="http://makingcomicsdotcom.tumblr.com/" target="_blank">Tumblr</a></li>
-						</ul>
-					</nav>
 
 				</div> <?php // end #inner-header ?>
 			</header> <?php // end header ?>

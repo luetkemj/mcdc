@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $black;
-	background-color: $white;
+	background-color: transparent;
 }
 
 /********************
@@ -168,20 +168,19 @@ HEADER STYLES
 		}
 	}
 
-	background-image: url(../images/_dev/2816-header.png);
-	@include background-size(cover);
+	// background-image: url(../images/_dev/2816-header.png);
+	// @include background-size(cover);
 
 	.logo {
 		a{
 			margin: 0 auto;
-			@include use-sprite('widelogo-m');
+			@include use-sprite('smalllogo');
 			background-repeat: no-repeat;
 			position: relative;
 		}
 	}
 
 	.container-logo{
-		@include gradient_black();
 		padding: 0 0 0 0;
 	}
 
@@ -217,7 +216,7 @@ nav{
 	a {
 		display: block;
 		text-decoration: none;
-		color: $white;
+		color: $black;
 		-webkit-font-smoothing: antialiased;
 		-moz-font-smoothing: antialiased;
 		-o-font-smoothing: antialiased;
@@ -227,7 +226,7 @@ nav{
 	.mainnavbtn{
 		background: transparent;
 		border: none;
-		color: $white;
+		color: $black;
 		font-size: 1.5em;
 		position: relative;
 		top: 5px;
@@ -243,8 +242,8 @@ nav{
 		margin-bottom: 0px;
 		min-height: 43px;
 	
-		background: rgb(68, 68, 68); /* fallback */
-		background: rgba(68, 68, 68, 0.7);
+		background: rgb(255, 255, 255); /* fallback */
+		background: rgba(255, 255, 255, 0.7);
 
 		ul{
 			display: none;
@@ -372,11 +371,11 @@ POSTS & CONTENT STYLES
 }
 
 #content {
-	margin-top: 4.6875em;
+	margin-top: 4em;
 }
 
 #main{
-	@include background-retina("../images/handmadepaper.png", "../images/handmadepaper_@2x.png");
+	// @include background-retina("../images/handmadepaper.png", "../images/handmadepaper_@2x.png");
 	padding: 2em 2% 4.6875em 2%;
 	margin-top: -4.6875em;
 }

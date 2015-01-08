@@ -55,10 +55,10 @@ require_once('library/includes/embed-meta-box-plugin.php');
 /*
 6. library/includes/embed-option-tree.php
 	- embed option tree for advanced theme options
-*/
-require_once('library/includes/embed-option-tree.php');
-load_template( trailingslashit( get_template_directory() ) . 'library/includes/theme-options.php' );
-load_template( trailingslashit( get_template_directory() ) . 'library/includes/meta-boxes.php' );
+// */
+// require_once('library/includes/embed-option-tree.php');
+// load_template( trailingslashit( get_template_directory() ) . 'library/includes/theme-options.php' );
+// load_template( trailingslashit( get_template_directory() ) . 'library/includes/meta-boxes.php' );
 
 
 
