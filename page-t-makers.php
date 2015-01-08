@@ -10,11 +10,9 @@ Template Name: Makers
 
 				<div id="inner-content" class="wrap clearfix">
 						
-					<div class="twocol first">&nbsp;</div>
+					<div class="onecol first">&nbsp;</div>
 
-						<div id="main" class="eightcol clearfix" role="main">
-
-							<?php get_search_form(); ?>		
+						<div id="main" class="ninecol clearfix" role="main">
 					
 					<header class="article-header">
 
@@ -74,9 +72,6 @@ Template Name: Makers
 						
 
 				</div> <?php // end #inner-content ?>
-
-			<div class="twocol last">&nbsp;</div>
-
 
 			</div> <?php // end #content ?>
 

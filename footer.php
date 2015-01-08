@@ -1,10 +1,12 @@
-			<footer class="footer" role="contentinfo">
-
+			<footer class="footer clearfix" role="contentinfo">
+				
+				
+				
 				<div id="inner-footer" class="wrap clearfix">
 
+<div class="twocol first">&nbsp;</div>
 
-
-				<div id="sidebar1" class="sidebar threecol first clearfix" role="complementary">
+				<div id="sidebar1" class="sidebar twocol clearfix" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
@@ -22,7 +24,7 @@
 
 				</div>
 
-				<div id="sidebar2" class="sidebar threecol clearfix" role="complementary">
+				<div id="sidebar2" class="sidebar twocol clearfix" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
 
@@ -40,7 +42,7 @@
 
 				</div>
 				
-				<div id="sidebar3" class="sidebar threecol clearfix" role="complementary">
+				<div id="sidebar3" class="sidebar twocol clearfix" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar3' ) ) : ?>
 
@@ -58,7 +60,7 @@
 
 				</div>
 
-				<div id="sidebar4" class="sidebar threecol last clearfix" role="complementary">
+				<div id="sidebar4" class="sidebar twocol clearfix" role="complementary">
 
 					<?php if ( is_active_sidebar( 'sidebar4' ) ) : ?>
 
