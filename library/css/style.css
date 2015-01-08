@@ -1794,15 +1794,14 @@ SIDEBARS & ASIDES
 *********************/
 /* line 1028, ../scss/_base.scss */
 .widgettitle {
-  text-transform: uppercase;
-  font-size: .875em;
-  font-weight: 400;
+  text-transform: none;
+  font-size: 1em;
+  font-weight: 700;
   margin: 0 0 0 0;
-  background-color: #3f3f3f;
-  color: #ffffff;
-  padding: .825em .825em .7em 2.5em;
+  color: #3f3f3f;
+  padding: 0;
 }
-/* line 1038, ../scss/_base.scss */
+/* line 1036, ../scss/_base.scss */
 .widgettitle .lsf {
   font-size: 2em;
   text-transform: none;
@@ -1811,30 +1810,32 @@ SIDEBARS & ASIDES
   left: 22px;
 }
 
-/* line 1049, ../scss/_base.scss */
+/* line 1047, ../scss/_base.scss */
 .widget {
+  text-align: left;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
-/* line 1053, ../scss/_base.scss */
+/* line 1052, ../scss/_base.scss */
 .widget ul {
-  margin-left: 2em;
+  margin-left: 0em;
   padding-left: 0;
 }
-/* line 1057, ../scss/_base.scss */
+/* line 1056, ../scss/_base.scss */
 .widget ul ul {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 1062, ../scss/_base.scss */
+/* line 1061, ../scss/_base.scss */
 .widget ul li {
-  margin-left: .25em;
+  margin-left: 0em;
   /* deep nesting */
 }
-/* line 1068, ../scss/_base.scss */
+/* line 1067, ../scss/_base.scss */
 .widget ul li a {
   color: #3f3f3f;
 }
-/* line 1071, ../scss/_base.scss */
+/* line 1070, ../scss/_base.scss */
 .widget ul li a:hover {
   color: #9e3b0d;
 }
@@ -1842,10 +1843,11 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1089, ../scss/_base.scss */
+/* line 1088, ../scss/_base.scss */
 .footer {
   clear: both;
   text-align: center;
+  padding-top: 2em;
   background: white;
   /* fallback */
   background: rgba(255, 255, 255, 0.7);
@@ -2313,23 +2315,26 @@ you can add resource intensive styles.
 
   /* line 260, ../scss/_768up.scss */
   .widgettitle {
-    border-bottom: 2px solid #444;
-    margin: 0 0 0.75em 0;
+    margin: 0 0 0 0;
   }
 
-  /* line 265, ../scss/_768up.scss */
+  /* line 264, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 0 0 2.2em 0;
   }
+  /* line 268, ../scss/_768up.scss */
+  .widget ul {
+    margin: 0 0 .75em 0;
+  }
   /* line 270, ../scss/_768up.scss */
   .widget ul li {
-    margin-bottom: 0.75em;
+    margin-bottom: 0em;
     /* deep nesting */
   }
   /* line 278, ../scss/_768up.scss */
   .widget ul li ul {
-    margin-top: 0.75em;
+    margin-bottom: 0.75em;
     padding-left: 1em;
   }
 

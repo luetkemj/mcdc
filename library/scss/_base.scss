@@ -1026,14 +1026,12 @@ SIDEBARS & ASIDES
 .sidebar {}
 
 	.widgettitle {
-		text-transform: uppercase;
-		font-size: .875em;
-		font-weight: 400;
+		text-transform: none;
+		font-size: 1em;
+		font-weight: 700;
 		margin: 0 0 0 0;
-
-		background-color: $black;
-		color: $white;
-		padding: .825em .825em .7em 2.5em;
+		color: $black;
+		padding: 0;
 
 		.lsf{
 			font-size: 2em;
@@ -1047,11 +1045,12 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-
+		text-align: left;
 		font-family: $sans-serif;
+		font-weight: 300;
 
 		ul {
-			margin-left: 2em;
+			margin-left: 0em;
 			padding-left: 0;
 
 			ul{
@@ -1060,7 +1059,7 @@ SIDEBARS & ASIDES
 			}
 
 			li {
-				margin-left: .25em;
+				margin-left: 0em;
 				&:first-child {}
 
 				&:last-child {}
@@ -1089,6 +1088,7 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	text-align: center;
+	padding-top: 2em;
 	
 	background: rgb(255, 255, 255); /* fallback */
 	background: rgba(255, 255, 255, 0.7);

@@ -258,8 +258,7 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin: 0 0 0.75em 0;
+		margin: 0 0 0 0;
 	}
 
 	.widget {
@@ -267,8 +266,9 @@ SIDEBARS & ASIDES
 		margin: 0 0 2.2em 0;
 
 		ul {
+			margin: 0 0 .75em 0;
 			li {
-				margin-bottom: 0.75em;
+				margin-bottom: 0em;
 
 				&:first-child {}
 				&:last-child {}
@@ -276,7 +276,7 @@ SIDEBARS & ASIDES
 				/* deep nesting */
 
 				ul {
-					margin-top: 0.75em;
+					margin-bottom: 0.75em;
 					padding-left: 1em;
 				}
 			}
