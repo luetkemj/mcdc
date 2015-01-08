@@ -21,6 +21,8 @@ body {
 	line-height: 1.5;
 	color: $black;
 	background-color: transparent;
+	background-image: url(https://placekitten.com/1200/1300);
+	background-size: cover;
 }
 
 /********************
@@ -172,6 +174,12 @@ HEADER STYLES
 	// @include background-size(cover);
 
 	.logo {
+		padding: 25px 0;
+		background-color: $white;
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+
 		a{
 			margin: 0 auto;
 			@include use-sprite('smalllogo');
@@ -371,7 +379,12 @@ POSTS & CONTENT STYLES
 }
 
 #content {
-	margin-top: 4em;
+	padding-top: 4em;
+	background-color: $white;
+
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
 }
 
 #main{
@@ -1076,6 +1089,9 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	text-align: center;
+	
+	background: rgb(255, 255, 255); /* fallback */
+	background: rgba(255, 255, 255, 0.7);
 }
 
 	/*

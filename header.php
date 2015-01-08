@@ -57,7 +57,7 @@
 						<?php bones_top_nav(); ?>
 					</nav>
 
-						<div class="wrap logo">
+						<div class="logo">
 							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a>
 						</div>
 					</div>
