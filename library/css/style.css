@@ -914,7 +914,7 @@ body {
   line-height: 1.5;
   color: #3f3f3f;
   background-color: transparent;
-  background-image: url(https://placekitten.com/1200/1300);
+  background: url(https://placekitten.com/1200/1300) no-repeat center center fixed;
   background-size: cover;
 }
 

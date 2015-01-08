@@ -42,7 +42,14 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+<?php 
+$background_image = get_field('background_image', 'option'); 
+if ( $background_image ) {
+	$background_style = "style='background-image:url(".$background_image.");'";
+}
+?>
+
+	<body <?php body_class(); echo $background_style; ?> >
 
 		<div id="container">
 
