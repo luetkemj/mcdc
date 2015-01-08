@@ -33,7 +33,7 @@ Template Name: Makers
 						  $wp_query = new WP_Query(); 
 						  
 						  $args = array(
-						  			'posts_per_page' => 1000,
+						  			'posts_per_page' => -1,
 						  			'post_type' => array( 'custom_type_maker' ),
 						  			'meta_key' => 'maker_last_name',
 						  			'orderby' => 'meta_value',
