@@ -172,7 +172,7 @@ nav{
 			display: none;
 			z-index: 8999;
 			background-color: $white;
-			@include box-shadow(rgba($black, 0.2) 2px 2px 3px);
+			box-shadow: 2px 2px 3px rgba($black, 0.2);
 
 			li {
 
