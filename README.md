@@ -10,13 +10,22 @@ Designed by [Patrick Yurick](http://www.theheadcomic.com/) and [Mark Luetke](htt
 Developed by [Mark Luetke](http://luetkemj.com)
 
 # Usage
+```bash
+bundle install
+```
+
+```bash
+npm install
+```
 
 ```bash
 grunt init
 ```
+
 ```bash
 grunt dev
 ```
+
 ```bash
 grunt build
 ```
