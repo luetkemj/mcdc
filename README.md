@@ -5,7 +5,7 @@ Built with Bones, Making Comics focuses primarily on archival structure
 for a simple and intuitive user experience while drilling for 
 deep content.
 
-Designed and [Mark Luetke](http://luetkemj.com) and [Patrick Yurick](http://www.theheadcomic.com/)
+Designed by [Patrick Yurick](http://www.theheadcomic.com/) and [Mark Luetke](http://luetkemj.com)
 
 Developed by [Mark Luetke](http://luetkemj.com)
 
