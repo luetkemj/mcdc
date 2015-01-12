@@ -62,6 +62,12 @@ require_once('library/includes/embed-meta-box-plugin.php');
 
 
 
+// DEVELOPMENT SCRIPTS (.gitignore'd)
+if ( !are_we_live() ){
+  require_once( 'library/dev-scripts.php' );
+}
+
+
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
