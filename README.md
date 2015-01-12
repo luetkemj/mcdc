@@ -9,6 +9,19 @@ Designed and [Mark Luetke](http://luetkemj.com) and [Patrick Yurick](http://www.
 
 Developed by [Mark Luetke](http://luetkemj.com)
 
+# Usage
+
+```bash
+grunt init
+```
+```bash
+grunt dev
+```
+```bash
+grunt build
+```
+
+
 # Bones
 __A Lightweight Wordpress Development Theme__
 
