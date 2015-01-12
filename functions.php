@@ -291,4 +291,19 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+
+
+function are_we_live(){
+  $current_server = $_SERVER['HTTP_HOST']; 
+
+  if ( $current_server == 'makingcomics.com' ){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+
 ?>

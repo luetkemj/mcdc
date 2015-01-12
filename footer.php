@@ -93,6 +93,11 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
+		<?php if ( !are_we_live() ){
+	    echo get_development_scripts();
+		} ?>
+
+
 	</body>
 
 </html> <?php // end page. what a ride! ?>

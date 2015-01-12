@@ -9,6 +9,7 @@ module.exports = function(grunt) {
             options: {
               cssDir: 'library/css',
               sassDir: 'library/scss',
+              imagesDir: 'library/images',
               environment: 'development',
               relativeAssets: true,
               outputStyle: 'expanded',
