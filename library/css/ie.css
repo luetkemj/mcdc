@@ -221,7 +221,7 @@ BUTTONS
 *********************/
 /* line 288, ../scss/_mixins.scss */
 .button, .button:visited {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
   border: 1px solid #8c340b;
   border-top-color: #a83f0d;
   border-left-color: #a83f0d;

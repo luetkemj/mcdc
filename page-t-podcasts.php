@@ -14,8 +14,6 @@ Template Name: Podcasts
 
 						<div id="main" class="eightcol clearfix" role="main">
 
-							<?php get_search_form(); ?>		
-
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
