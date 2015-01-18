@@ -1882,6 +1882,19 @@ FOOTER STYLES
   background: rgba(255, 255, 255, 0.7);
 }
 
+/* line 1098, ../scss/_base.scss */
+#inner-footer .sidebar {
+  width: 22.85714%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 1102, ../scss/_base.scss */
+#inner-footer .sidebar:last-of-type {
+  width: 22.85714%;
+  float: right;
+  margin-right: 0;
+}
+
 /*
 if you checked out the link above:
 http://www.alistapart.com/articles/organizing-mobile/
@@ -1892,7 +1905,7 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 1133, ../scss/_base.scss */
+/* line 1143, ../scss/_base.scss */
 .royalSlider a .rsMainSlideImage {
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -1904,12 +1917,12 @@ view.
   transition-duration: 0.2s;
 }
 
-/* line 1138, ../scss/_base.scss */
+/* line 1148, ../scss/_base.scss */
 .royalSlider a .rsMainSlideImage:hover {
   opacity: .5;
 }
 
-/* line 1171, ../scss/_base.scss */
+/* line 1181, ../scss/_base.scss */
 .entry-content img,
 .entry-content iframe,
 .entry-content object,

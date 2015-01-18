@@ -4,80 +4,45 @@
 				
 				<div id="inner-footer" class="wrap clearfix">
 
-<div class="twocol first">&nbsp;</div>
+					<div id="sidebar1" class="sidebar clearfix" role="complementary">
 
-				<div id="sidebar1" class="sidebar twocol clearfix" role="complementary">
+						<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
-					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+							<?php dynamic_sidebar( 'sidebar1' ); ?>
 
-						<?php dynamic_sidebar( 'sidebar1' ); ?>
+						<?php endif; ?>
 
-					<?php else : ?>
+					</div>
 
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
+					<div id="sidebar2" class="sidebar clearfix" role="complementary">
 
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
+						<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
 
-					<?php endif; ?>
+							<?php dynamic_sidebar( 'sidebar2' ); ?>
 
-				</div>
+						<?php endif; ?>
 
-				<div id="sidebar2" class="sidebar twocol clearfix" role="complementary">
+					</div>
+					
+					<div id="sidebar3" class="sidebar clearfix" role="complementary">
 
-					<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
+						<?php if ( is_active_sidebar( 'sidebar3' ) ) : ?>
 
-						<?php dynamic_sidebar( 'sidebar2' ); ?>
+							<?php dynamic_sidebar( 'sidebar3' ); ?>
 
-					<?php else : ?>
+						<?php endif; ?>
 
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
+					</div>
 
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
+					<div id="sidebar4" class="sidebar clearfix" role="complementary">
 
-					<?php endif; ?>
+						<?php if ( is_active_sidebar( 'sidebar4' ) ) : ?>
 
-				</div>
-				
-				<div id="sidebar3" class="sidebar twocol clearfix" role="complementary">
+							<?php dynamic_sidebar( 'sidebar4' ); ?>
 
-					<?php if ( is_active_sidebar( 'sidebar3' ) ) : ?>
+						<?php endif; ?>
 
-						<?php dynamic_sidebar( 'sidebar3' ); ?>
-
-					<?php else : ?>
-
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
-
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-				</div>
-
-				<div id="sidebar4" class="sidebar twocol clearfix" role="complementary">
-
-					<?php if ( is_active_sidebar( 'sidebar4' ) ) : ?>
-
-						<?php dynamic_sidebar( 'sidebar4' ); ?>
-
-					<?php else : ?>
-
-						<?php // This content shows up if there are no widgets defined in the backend. ?>
-
-						<div class="alert alert-help">
-							<p><?php _e( 'Please activate some Widgets.', 'bonestheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-				</div>
-
+					</div>
 
 
 					<p class="source-org copyright clear">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>

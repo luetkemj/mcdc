@@ -1094,6 +1094,16 @@ FOOTER STYLES
 	background: rgba(255, 255, 255, 0.7);
 }
 
+#inner-footer{
+	.sidebar{
+		@include span(3 of 12);
+	}
+
+	.sidebar:last-of-type{
+		@include span( last 3 of 12);
+	}
+}
+
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
