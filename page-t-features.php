@@ -27,8 +27,6 @@ get_header(); ?>
 
         <div id="inner-content" class="wrap clearfix">        
 
-            <div class="twocol first clearfix">&nbsp;</div>
-
             <div id="main" class="eightcol clearfix" role="main">  
 
             <?php
