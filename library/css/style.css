@@ -584,6 +584,28 @@ dd {
 Site Name:
 Author:
 
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+together, let's see how this works out. If you want to use 1140, the original 
+values are commented out on each line.
+
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
 Stylesheet: Mixins & Constants Stylesheet
 
 This is where you can take advantage of Sass' great features:
@@ -800,7 +822,7 @@ BUTTONS
   line-height: 21px;
   border-radius: 4px;
   background-color: #b1420e;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c94b10), to(#b1420e));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #c94b10, #b1420e);
   background-image: -moz-linear-gradient(top, #c94b10, #b1420e);
   background-image: -o-linear-gradient(top, #c94b10, #b1420e);
@@ -813,7 +835,7 @@ BUTTONS
   border-top-color: #6b2808;
   border-left-color: #6b2808;
   background-color: #9a390c;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b1420e), to(#9a390c));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #b1420e, #9a390c);
   background-image: -moz-linear-gradient(top, #b1420e, #9a390c);
   background-image: -o-linear-gradient(top, #b1420e, #9a390c);
@@ -822,7 +844,7 @@ BUTTONS
 /* line 312, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #c94b10;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b1420e), to(#c94b10));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #b1420e, #c94b10);
   background-image: -moz-linear-gradient(top, #b1420e, #c94b10);
   background-image: -o-linear-gradient(top, #b1420e, #c94b10);
@@ -834,7 +856,7 @@ BUTTONS
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
   background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
   background-image: -moz-linear-gradient(top, #1990db, #1681c4);
   background-image: -o-linear-gradient(top, #1990db, #1681c4);
@@ -845,7 +867,7 @@ BUTTONS
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
   background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
@@ -854,7 +876,7 @@ BUTTONS
 /* line 327, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background-image: -webkit-gradient(linear, left top, left bottom, left, right);
   background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
   background-image: -moz-linear-gradient(top, #1681c4, #1990db);
   background-image: -o-linear-gradient(top, #1681c4, #1990db);
@@ -962,8 +984,15 @@ LAYOUT & GRID STYLES
 *********************/
 /* line 73, ../scss/_base.scss */
 .wrap {
-  width: 96%;
-  margin: 0 auto;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 /*********************
@@ -1989,28 +2018,6 @@ you can add resource intensive styles.
   Site Name:
   Author:
   
-  Stylesheet: Grid Stylesheet
-  
-  I've seperated the grid so you can swap it out easily. It's
-  called at the top the style.scss stylesheet.
-  
-  There are a ton of grid solutions out there. You should definitely
-  experiment with your own. Here are some recommendations:
-  
-  http://gridsetapp.com - Love this site. Responsive Grids made easy.
-  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-  http://gridpak.com/ - Create your own responsive grid.
-  
-  The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-  together, let's see how this works out. If you want to use 1140, the original 
-  values are commented out on each line.
-  
-  ******************************************************************/
-  /******************************************************************
-  Site Name:
-  Author:
-  
   Stylesheet: Tablet & Small Desktop Stylesheet
   
   Here's where you can start getting into the good stuff.
@@ -2026,11 +2033,6 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 26, ../scss/_768up.scss */
-  .wrap {
-    max-width: 1140px;
-  }
-
   /*********************
   HEADER STYLES
   *********************/

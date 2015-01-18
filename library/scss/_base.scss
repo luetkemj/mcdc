@@ -71,8 +71,8 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
-	margin: 0 auto;
+	@include container();
+	// margin: 0 auto;
 }
 
 /*********************

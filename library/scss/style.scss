@@ -19,8 +19,12 @@ of the styles inside media queries.
 // import normalize
 @import "normalize";
 
+// import grid (susy)
+@import "grid";
+
 // import mixins
 @import "mixins";
+
 
 /*
 BASE (MOBILE) SIZE
@@ -54,7 +58,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
 
 	// import grids
-	@import "grid";
+	
 
 	// styles in 768up.scss
 	@import "768up";

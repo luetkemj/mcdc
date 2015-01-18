@@ -33,13 +33,10 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<?php // wordpress head functions ?>
+
+<!-- butter -->
 		<?php wp_head(); ?>
-		<?php // end of wordpress head ?>
-
-		<?php // drop Google Analytics Here ?>
-		<?php // end analytics ?>
-
+<!-- bread -->
 	</head>
 
 <?php 
