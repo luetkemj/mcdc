@@ -112,7 +112,7 @@ TYPOGRAPHY
   font-weight: normal;
   font-style: normal;
 }
-/* line 125, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .lsf, .lsf-icon:before {
   font-family: 'LigatureSymbols';
   -webkit-text-rendering: optimizeLegibility;
@@ -127,14 +127,14 @@ TYPOGRAPHY
   font-smoothing: antialiased;
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 142, ../scss/_mixins.scss */
 .lsf-icon:before {
   content: attr(title);
   margin-right: 0.3em;
   font-size: 130%;
 }
 
-/* line 145, ../scss/_mixins.scss */
+/* line 148, ../scss/_mixins.scss */
 .lsf-icon.amazon:before {
   content: '\E007';
 }
@@ -143,53 +143,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 156, ../scss/_mixins.scss */
+/* line 159, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 162, ../scss/_mixins.scss */
+/* line 165, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 163, ../scss/_mixins.scss */
+/* line 166, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 164, ../scss/_mixins.scss */
+/* line 167, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 168, ../scss/_mixins.scss */
+/* line 171, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 174, ../scss/_mixins.scss */
+/* line 177, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 180, ../scss/_mixins.scss */
+/* line 183, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 186, ../scss/_mixins.scss */
+/* line 189, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 192, ../scss/_mixins.scss */
+/* line 195, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -219,7 +219,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 285, ../scss/_mixins.scss */
+/* line 288, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Montserrat", sans-serif;
   border: 1px solid #8c340b;
@@ -243,7 +243,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #c94b10, #b1420e);
   background-image: linear-gradient(to bottom, #c94b10, #b1420e);
 }
-/* line 304, ../scss/_mixins.scss */
+/* line 307, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #8c340b;
@@ -256,7 +256,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #b1420e, #9a390c);
   background-image: linear-gradient(to bottom, #b1420e, #9a390c);
 }
-/* line 312, ../scss/_mixins.scss */
+/* line 315, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #c94b10;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b1420e), to(#c94b10));
@@ -266,7 +266,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #b1420e, #c94b10);
 }
 
-/* line 317, ../scss/_mixins.scss */
+/* line 320, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -278,7 +278,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 323, ../scss/_mixins.scss */
+/* line 326, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -288,7 +288,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 327, ../scss/_mixins.scss */
+/* line 330, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
