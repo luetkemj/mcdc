@@ -52,19 +52,24 @@ if ( $background_image ) {
 
 			<header class="header" role="banner" >
 
-				<div id="inner-header" class="clearfix">
+				<nav role="navigation" class="topnav">
+					<button class="topnavbtn lsf">menu</button>
+					<?php bones_top_nav(); ?>
+				</nav>
 
-					<div class="container-logo gradient">
+				<div class="inner-header clearfix">
 
-					<nav role="navigation" class="topnav">
-						<button class="topnavbtn lsf">menu</button>
-						<?php bones_top_nav(); ?>
-					</nav>
-
+					<div class="inner-inner-header clearfix">
+						
 						<div class="logo">
 							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a>
 						</div>
+
+						<?php get_search_form(); ?>	
+					
 					</div>
 
-				</div> <?php // end #inner-header ?>
-			</header> <?php // end header ?>
+				</div>
+
+
+			</header>
