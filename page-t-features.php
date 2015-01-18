@@ -127,8 +127,6 @@ get_header(); ?>
               <?php endif; ?>
 
             </div> <?php // end #main ?>
-
-          <div class="twocol last clearfix">&nbsp;</div>
         
         </div> <?php // end #inner-content ?>
 

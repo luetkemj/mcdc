@@ -10,7 +10,6 @@ Template Name: Makers
 
 				<div id="inner-content" class="wrap clearfix">
 						
-					<div class="onecol first">&nbsp;</div>
 
 						<div id="main" class="ninecol clearfix" role="main">
 					

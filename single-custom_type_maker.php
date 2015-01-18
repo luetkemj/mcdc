@@ -19,8 +19,6 @@ single-bookmarks.php
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div class="twocol first">&nbsp;</div>
-
 
 						<div id="main" class="eightcol clearfix" role="main">
 
@@ -108,8 +106,6 @@ wp_reset_postdata();
 							<?php endif; ?>
 
 						</div> <?php // end #main ?>
-
-					<div class="twocol last">&nbsp;</div>
 		
 
 				</div> <?php // end #inner-content ?>

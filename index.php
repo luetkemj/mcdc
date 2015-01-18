@@ -4,8 +4,6 @@
 
 				<div id="inner-content" class="wrap clearfix">				
 
-						<div class="twocol first clearfix">&nbsp;</div>
-
 						<div id="main" class="eightcol clearfix" role="main">
 
 <?php 
@@ -89,8 +87,6 @@ if ( is_home() ){
 							<?php endif; ?>
 
 						</div> <?php // end #main ?>
-
-					<div class="twocol last clearfix">&nbsp;</div>
 				
 				</div> <?php // end #inner-content ?>
 

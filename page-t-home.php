@@ -10,9 +10,7 @@ Template Name: Home
 
         <div id="inner-content" class="wrap clearfix">
             
-          <div class="twocol first">&nbsp;</div>
-
-            <div id="main" class="eightcol clearfix" role="main">
+            <div id="main" class="clearfix" role="main">
 
             </div> <?php // end #main ?>
 

@@ -10,8 +10,6 @@ Template Name: Hangouts
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div class="twocol first">&nbsp;</div>
-
 						<div id="main" class="eightcol clearfix" role="main">
 
 							<?php get_search_form(); ?>		
@@ -140,15 +138,7 @@ Template Name: Hangouts
 
 						<?php endif; ?>
 
-
-
-
-
-
-
 					</div> <?php // end #main ?>
-
-					<div class="twocol last clearfix">&nbsp;</div>
 					
 				</div> <?php // end #inner-content ?>
 
