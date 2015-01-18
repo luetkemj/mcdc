@@ -49,6 +49,7 @@
 					<p>
 						<a target="blank" href="https://plus.google.com/+Makingcomics" rel="publisher">Google+</a> &nbsp; <a target="blank" href="https://www.facebook.com/makingcomics">Facebook</a> &nbsp; <a target="blank" href="https://twitter.com/Making_Comics">Twitter</a> &nbsp; <a target="blank" href="http://makingcomicsdotcom.tumblr.com/">Tumblr</a>
 					</p>
+					<p>Site Design + Development by <a href="http://luetkemj.com" target="_blank">Mark Luetke</a> &amp; <a href="http://www.theheadcomic.com" target="_blank">Patrick Yurick</a></p>
 				</div> <?php // end #inner-footer ?>
 
 			</footer> <?php // end footer ?>
