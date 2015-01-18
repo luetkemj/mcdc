@@ -150,6 +150,9 @@ h5, .h5 {
 	letter-spacing: 2px;
 }
 
+
+
+
 /*********************
 HEADER STYLES
 *********************/
@@ -179,13 +182,14 @@ HEADER STYLES
 				@include use-sprite('smalllogo');
 				background-repeat: no-repeat;
 				position: relative;
-				
 				margin: 0 auto;
 				@include breakpoint( $breakpoint-768 ){
-					margin: 0 0 0 0;
+					margin: 0 0 0 0;					
+					left: -6px;
 				}
 
 			}
+
 		}
 
 
@@ -257,8 +261,6 @@ and more scalable.
 
 nav{
 	position: relative;
-	// @include gradient_blue();
-
 
 	font-family: $sans-serif;
 	text-transform: uppercase;
@@ -362,6 +364,183 @@ nav{
 	}
 
 
+
+
+
+
+@include breakpoint($breakpoint-768){	
+		.topnavbtn,
+		.mainnavbtn{
+			display: none;
+		}
+
+		&.topnav{
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+			min-height: 0px;
+			margin-top: -4px;
+			
+
+			ul{
+				display: block;
+				margin-top: 0em;
+				position: relative;
+				top: 0px;
+				text-align: center;
+				padding-bottom: 0;
+			}
+		
+			li{
+				display: inline-block;
+			}
+
+			li a{
+				font-size: .625em;
+				margin-right: 2em;
+			}
+
+			li:last-child a{
+				margin-right: 0;
+			}
+		}
+
+		&.mainnav{
+			font-weight: 700;
+			min-height: inherit;
+			
+			> ul{
+				display: block;
+				padding: 0 0;
+				text-align: center;
+			}
+
+			li a{
+				padding: 0px 30px 1px 0;
+				margin-right: 1em;
+			}
+
+			li:last-child a{
+				margin-right: 0;
+				padding-right: 0;
+			}
+
+			.sub-menu{
+				margin: 0 0 0 0;
+			}
+		}
+
+		li a{
+			font-size: 1.5em;
+		}
+
+
+
+		ul.social{
+			top: -.2em;
+		}
+
+
+
+
+
+		li {
+			position: relative;
+
+			display: inline-block;
+
+			a {
+				border-bottom: 0;
+
+				/*
+				you can use hover styles here even though this size
+				has the possibility of being a mobile device.
+				*/
+				&:hover, &:focus {
+					color: darken($white, 9%);
+				}
+			}
+
+			&:first-child {}
+			&:last-child {}
+
+			/*
+			plan your menus and drop-downs wisely.
+			*/
+			ul.sub-menu,
+			ul.children {
+				margin: 0 0 0 0;
+				padding: 0 0 0 0;
+				position: absolute;
+				display: none;
+				z-index: 8999;
+				background-color: $white;
+				box-shadow: 2px 2px 3px rgba($black, 0.2);
+
+				li {
+
+					a {
+						padding: .625em;
+						margin: 0 0 0 0;
+						border-right: 0;
+						display: block;
+						width: 180px;
+						text-transform: lowercase;
+						color: $black;
+						font-size: 1.125em;
+
+						&:hover,
+						&:focus {
+							color: $white;
+							background-color: $black;
+						}
+
+						&:link {
+							color: $black;
+						}
+					}
+
+					&:first-child {}
+
+					&:last-child {
+
+						a {
+							border-bottom: 0;
+						}
+					}
+
+					/*
+					if you need to go deeper, go nuts
+					just remember deeper menus suck
+					for usability. k, bai.
+					*/
+					ul {}
+				}
+
+				/* highlight sub-menu current page */
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					a {}
+				}
+			}
+
+			/* showing sub-menus */
+			&:hover ul {
+				top: auto;
+				display: block;
+			}
+
+		} /* end .menu ul li */
+
+		/* highlight current page */
+		li.current-menu-item,
+		li.current_page_item,
+		li.current-page-ancestor {
+			a {}
+		}  /* end current highlighters */	
+
+	}
+
 }
 
 
@@ -372,6 +551,12 @@ POSTS & CONTENT STYLES
 
 .indexbanner{
 	display: none;
+	@include breakpoint($breakpoint-768){
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: -1em 0 3em 0;
+	}
 }
 
 #content {
@@ -1038,7 +1223,11 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	@include breakpoint($breakpoint-768){
+		margin-top: 0em;
+	}
+}
 
 	.widgettitle {
 		text-transform: none;
@@ -1047,6 +1236,10 @@ SIDEBARS & ASIDES
 		margin: 0 0 0 0;
 		color: $black;
 		padding: 0;
+
+		@include breakpoint($breakpoint-768){
+			margin: 0 0 0 0;
+		}
 
 		.lsf{
 			font-size: 2em;
@@ -1063,9 +1256,16 @@ SIDEBARS & ASIDES
 		text-align: left;
 		font-family: $sans-serif;
 		font-weight: 300;
+		@include breakpoint($breakpoint-768){
+			padding: 0 10px;
+			margin: 0 0 2.2em 0;
+		}
 
 		ul {
 			margin-left: 0em;
+			@include breakpoint($breakpoint-768){
+				margin: 0 0 .75em 0;
+			}
 			padding-left: 0;
 
 			ul{
@@ -1075,6 +1275,9 @@ SIDEBARS & ASIDES
 
 			li {
 				margin-left: 0em;
+				@include breakpoint($breakpoint-768){
+					margin-bottom: 0em;
+				}
 				&:first-child {}
 
 				&:last-child {}
@@ -1088,13 +1291,20 @@ SIDEBARS & ASIDES
 				}
 
 				/* deep nesting */
-				ul {}
+				ul {
+					@include breakpoint($breakpoint-768){
+						margin-bottom: 0.75em;
+						padding-left: 1em;
+					}
+				}
 
 			}
 
 		}
 
 	}
+
+
 
 /*********************
 FOOTER STYLES
