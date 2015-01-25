@@ -1,0 +1,24 @@
+.page-template-page-t-home-php{
+
+  .home-features{
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    li{
+      display: inline-block;
+      width: 15%;
+      margin-left: 2%;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+
+}

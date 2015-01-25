@@ -10,14 +10,15 @@ get_header(); ?>
         $banner_primary_image = wp_get_attachment_image_src(get_field('banner_primary_image'), 'full');
         $banner_secondary_image = wp_get_attachment_image_src(get_field('banner_secondary_image'), 'full');
         $banner_secondary_text = get_field('banner_secondary_text');
+        $feature_sidebar = get_field('feature_sidebar');
       ?>
-
-      <div class="wrap clearfix feature-banners">
-        <div class="ninecol first clearfix">
+  <div class="wrap">
+      <div class="feature-banners clearfix">
+        <div class="primary">
           <img src="<?php echo $banner_primary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
         
-        <div class="threecol last clearfix">
+        <div class="secondary">
           <img src="<?php echo $banner_secondary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 
           <?php echo $banner_secondary_text; ?>
@@ -25,9 +26,9 @@ get_header(); ?>
 
       </div>
 
-        <div id="inner-content" class="wrap clearfix">        
+        <div id="inner-content" class="clearfix">        
 
-            <div id="main" class="eightcol clearfix" role="main">  
+            <div id="main" class="clearfix" role="main">  
 
             <?php
               $feature_category = get_field('feature_category');
@@ -125,8 +126,13 @@ get_header(); ?>
               <?php endif; ?>
 
             </div> <?php // end #main ?>
+
+            <div class="sidebar feature">
+              <?php echo $feature_sidebar; ?>
+            </div>
         
-        </div> <?php // end #inner-content ?>
+          </div> <?php // end #inner-content ?>
+        </div> <?php // end .wrap ?>
 
       </div> <?php // end #content ?>
 
