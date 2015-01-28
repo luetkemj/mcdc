@@ -66,8 +66,6 @@ if ( $background_image ) {
 						<div class="logo">
 							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a>
 						</div>
-
-						<?php get_search_form(); ?>	
 					
 					</div>
 
