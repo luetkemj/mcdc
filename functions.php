@@ -51,7 +51,7 @@ require_once( 'library/admin.php' ); // this comes turned off by default
 5. library/includes/embed-meta-box-plugin.php
 	- embed meta box classes and documentation
 */
-require_once('library/includes/embed-meta-box-plugin.php');
+// require_once('library/includes/embed-meta-box-plugin.php');
 /*
 6. library/includes/embed-option-tree.php
 	- embed option tree for advanced theme options

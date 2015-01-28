@@ -18,7 +18,7 @@ get_header(); ?>
           <img src="<?php echo $banner_primary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
         
-        <div class="secondary">
+        <div class="secondary clearfix">
           <img src="<?php echo $banner_secondary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 
           <?php echo $banner_secondary_text; ?>

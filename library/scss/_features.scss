@@ -2,12 +2,23 @@
   #main{
     margin-top: 0;
     clear: both;
+    @include breakpoint( 481px ){
+      @include span(first 7 of 12);
+    }
 
-    @include span(first 9 of 12);
+    @include breakpoint( 600px ){
+      @include span(first 9 of 12);
+    }
   }
   
   .sidebar.feature{
-    @include span(last 3 of 12);
+    @include breakpoint( 481px ){
+      @include span(last 4 of 12);
+    }
+    
+    @include breakpoint( 600px ){
+      @include span(last 3 of 12);
+    }
     padding: 20px;
     margin-top: 20px;
     background-color: #d9d9d9;
@@ -26,26 +37,35 @@
   border-radius: 10px;
   line-height: 0;
   
-  .primary{
-    @include span(first 7 of 12);
-    padding: 20px;
-    padding-right: 0;
+  img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  }
 
-    img{
-      border-radius: 10px;
+  .primary{
+    padding: 20px;
+    @include breakpoint( 600px ){
+      @include span(first 7 of 12);
+      padding-right: 0;
     }
   }
 
   .secondary{
 
     padding: 20px;
-
-    @include span(last 5 of 12);
+    padding-top: 0;
+    
+    // @include span(last 5 of 12);
     
     img{
-      border-radius: 10px;
       @include span(first 3 of 12);
-      border-radius: 10px;
+    }
+
+    @include breakpoint( 600px ){
+      @include span(last 5 of 12);
+      padding-left: 0;
+      padding-top: 20px;
     }
 
     line-height: 1.5;
