@@ -567,7 +567,7 @@ POSTS & CONTENT STYLES
 #main{
 	// @include background-retina("../images/handmadepaper.png", "../images/handmadepaper_@2x.png");
 	padding: 2em 2% 4.6875em 2%;
-	margin-top: -4.6875em;
+	margin-top: 0em;
 }
 
 
@@ -582,6 +582,19 @@ POSTS & CONTENT STYLES
 		max-width: 100%;
 		height: auto;
 	}
+}
+
+
+.colone{
+	@include span(first 4 of 12);
+}
+
+.coltwo{
+	@include span(4 of 12);
+}
+
+.colthree{
+	@include span(last 4 of 12);
 }
 
 		.hentry {
