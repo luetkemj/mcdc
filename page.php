@@ -16,6 +16,8 @@ if ( is_page(2880) ){
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
+
+<?php if ( get_field('show_title') ){ ?>
 								<header class="article-header">
 
 									<p class="categories"><?php
@@ -26,6 +28,7 @@ if ( is_page(2880) ){
 									<p class="byline vcard"></p>
 
 								</header> <?php // end article header ?>
+<?php } ?>
 
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>

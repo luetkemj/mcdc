@@ -311,8 +311,6 @@ function are_we_live(){
 
 
 
-
-
 if( function_exists('register_field_group') ):
 
 register_field_group(array (
@@ -752,6 +750,50 @@ register_field_group(array (
 ));
 
 register_field_group(array (
+	'key' => 'group_54db9dd983b6c',
+	'title' => 'Page Options',
+	'fields' => array (
+		array (
+			'key' => 'field_54db9dfae0764',
+			'label' => 'Show Title',
+			'name' => 'show_title',
+			'prefix' => '',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 1,
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'page',
+			),
+			array (
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'default',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+));
+
+register_field_group(array (
 	'key' => 'group_54b425ef838dd',
 	'title' => 'Post Options',
 	'fields' => array (
@@ -919,7 +961,6 @@ register_field_group(array (
 ));
 
 endif;
-
 
 
 ?>
