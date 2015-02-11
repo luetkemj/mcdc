@@ -12,10 +12,18 @@ Template Name: Home
             
             <div id="main" class="clearfix" role="main">
 
-              <?php if(get_field('home_page_features', 'option')): ?>
+              <?php if(get_field('home_page_features')): ?>
                 <ul class="home-features">
-                <?php while(the_repeater_field('home_page_features', 'option')): ?>
-                    <li><a href="<?php the_sub_field('link'); ?>"><img src="<?php the_sub_field('thumbnail'); ?>" alt="<?php the_sub_field('title'); ?>" title="<?php the_sub_field('title'); ?>"/></a>
+                <?php while(the_repeater_field('home_page_features')):                       
+                      $feature_link = (get_sub_field('link') ? get_sub_field('link') : get_sub_field('external_link'));
+                      $feature_target = (get_sub_field('external_link') ? "target='_blank'" : null );
+                      $feature_thumbnail = get_sub_field('thumbnail');
+                      $feature_title = get_sub_field('title');
+                      
+                ?>
+                    
+
+                    <li><a href="<?php echo $feature_link; ?>" <?php echo $feature_target; ?>><img src="<?php echo $feature_thumbnail; ?>" alt="<?php echo $feature_title; ?>" title="<?php echo $feature_title ?>"/></a>
                 <?php endwhile; ?>
                 
                 </ul>

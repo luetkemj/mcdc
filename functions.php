@@ -311,6 +311,17 @@ function are_we_live(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 if( function_exists('register_field_group') ):
 
 register_field_group(array (
@@ -434,6 +445,105 @@ register_field_group(array (
 	'key' => 'group_54db6ab4387ce',
 	'title' => 'Home Page Options',
 	'fields' => array (
+		array (
+			'key' => 'field_54c53820248f7',
+			'label' => 'Home Page Features',
+			'name' => 'home_page_features',
+			'prefix' => '',
+			'type' => 'repeater',
+			'instructions' => 'For all your features',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'min' => '',
+			'max' => '',
+			'layout' => 'table',
+			'button_label' => 'Add Row',
+			'sub_fields' => array (
+				array (
+					'key' => 'field_54c53b81a2358',
+					'label' => 'Feature Title',
+					'name' => 'title',
+					'prefix' => '',
+					'type' => 'text',
+					'instructions' => 'The name of the feature',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'maxlength' => '',
+					'readonly' => 0,
+					'disabled' => 0,
+				),
+				array (
+					'key' => 'field_54c5383c248f8',
+					'label' => 'Thumbnail',
+					'name' => 'thumbnail',
+					'prefix' => '',
+					'type' => 'image',
+					'instructions' => 'Square!',
+					'required' => 1,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'return_format' => 'url',
+					'preview_size' => 'thumbnail',
+					'library' => 'all',
+				),
+				array (
+					'key' => 'field_54c5386e248f9',
+					'label' => 'Link to Feature',
+					'name' => 'link',
+					'prefix' => '',
+					'type' => 'page_link',
+					'instructions' => 'Select the feature page you want to link to.',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'post_type' => array (
+						0 => 'page',
+					),
+					'taxonomy' => '',
+					'allow_null' => 0,
+					'multiple' => 0,
+				),
+				array (
+					'key' => 'field_54db9fe4d102d',
+					'label' => 'External Link',
+					'name' => 'external_link',
+					'prefix' => '',
+					'type' => 'url',
+					'instructions' => 'If you need to link outside of this site - add a link here. Will open in a new tab.',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+				),
+			),
+		),
 		array (
 			'key' => 'field_54db6abc09e11',
 			'label' => 'Making Modules',
@@ -860,88 +970,6 @@ register_field_group(array (
 			'preview_size' => 'thumbnail',
 			'library' => 'all',
 		),
-		array (
-			'key' => 'field_54c53820248f7',
-			'label' => 'Home Page Features',
-			'name' => 'home_page_features',
-			'prefix' => '',
-			'type' => 'repeater',
-			'instructions' => 'For all your features',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array (
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'min' => '',
-			'max' => '',
-			'layout' => 'table',
-			'button_label' => 'Add Row',
-			'sub_fields' => array (
-				array (
-					'key' => 'field_54c53b81a2358',
-					'label' => 'Feature Title',
-					'name' => 'title',
-					'prefix' => '',
-					'type' => 'text',
-					'instructions' => 'The name of the feature',
-					'required' => 0,
-					'conditional_logic' => 0,
-					'wrapper' => array (
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'default_value' => '',
-					'placeholder' => '',
-					'prepend' => '',
-					'append' => '',
-					'maxlength' => '',
-					'readonly' => 0,
-					'disabled' => 0,
-				),
-				array (
-					'key' => 'field_54c5383c248f8',
-					'label' => 'Thumbnail',
-					'name' => 'thumbnail',
-					'prefix' => '',
-					'type' => 'image',
-					'instructions' => 'Square!',
-					'required' => 1,
-					'conditional_logic' => 0,
-					'wrapper' => array (
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'return_format' => 'url',
-					'preview_size' => 'thumbnail',
-					'library' => 'all',
-				),
-				array (
-					'key' => 'field_54c5386e248f9',
-					'label' => 'Link to Feature',
-					'name' => 'link',
-					'prefix' => '',
-					'type' => 'page_link',
-					'instructions' => 'Select the feature page you want to link to.',
-					'required' => 1,
-					'conditional_logic' => 0,
-					'wrapper' => array (
-						'width' => '',
-						'class' => '',
-						'id' => '',
-					),
-					'post_type' => array (
-						0 => 'page',
-					),
-					'taxonomy' => '',
-					'allow_null' => 0,
-					'multiple' => 0,
-				),
-			),
-		),
 	),
 	'location' => array (
 		array (
@@ -961,6 +989,5 @@ register_field_group(array (
 ));
 
 endif;
-
 
 ?>
