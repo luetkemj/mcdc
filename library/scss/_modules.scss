@@ -1,0 +1,24 @@
+.page-template-page-t-module-php{
+  .module-header{
+      display: flex;
+      align-items: center; /* align vertical */
+      color: $black;
+      transition: color .3s ease;
+      margin-bottom: 2em;
+
+      .post-title {
+        @include span( first 10 of 12);
+      }
+      
+
+      .icon{
+        @include span( last 2 of 10 );
+        text-align: right;
+
+        img{
+          max-height: 72px;
+          width: auto;
+        }
+      }
+  }
+}

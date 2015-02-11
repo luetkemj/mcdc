@@ -82,6 +82,7 @@ LINK STYLES
 a {
 	color: $link-color;
 	text-decoration: none;
+	transition: color .3s ease;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -302,10 +303,15 @@ nav{
 		ul{
 			display: none;
 			margin-top: 1em;
+			margin-bottom: 0;
 			padding-bottom: 1em;
 		}
 		li a{
 			font-size: 1em;
+
+			&:hover{
+				color: $mcdc-orange;
+			}
 		}
 	}
 

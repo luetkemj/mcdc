@@ -34,7 +34,7 @@ Template Name: Home
                   $module_link = get_post_permalink($module_page);
                   $module_icon = get_field('icon', $module_page);
                   ?>
-                  <li><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><a href="<?php echo $module_link; ?>"><?php echo $module_title; ?></a></li>
+                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a></li>
                 <?php endwhile; ?>
                 
                 </ul>
@@ -52,7 +52,7 @@ Template Name: Home
                   $module_link = get_post_permalink($module_page);
                   $module_icon = get_field('icon', $module_page);
                   ?>
-                  <li><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><a href="<?php echo $module_link; ?>"><?php echo $module_title; ?></a></li>
+                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a></li>
                 <?php endwhile; ?>
                 
                 </ul>
@@ -69,7 +69,7 @@ Template Name: Home
                   $module_link = get_post_permalink($module_page);
                   $module_icon = get_field('icon', $module_page);
                   ?>
-                  <li><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><a href="<?php echo $module_link; ?>"><?php echo $module_title; ?></a></li>
+                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a></li>
                 <?php endwhile; ?>
                 
                 </ul>

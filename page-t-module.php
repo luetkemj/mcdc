@@ -15,14 +15,13 @@
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                <header class="article-header">
-
-                  <p class="categories"><?php
-                  printf( __( '%1$s', 'bonestheme' ), get_the_category_list(' / ') );
-                  ?></p>
+                <header class="article-header module-header">
 
                   <h1 class="h2 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                  <p class="byline vcard"></p>
+                  <div class="icon">
+                    <img src="<?php the_field('icon'); ?>"/>
+                  </div>
+                  
 
                 </header> <?php // end article header ?>
 
