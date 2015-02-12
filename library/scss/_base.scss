@@ -921,6 +921,7 @@ PAGE NAVI STYLES
                 display: inline;
                 overflow: hidden;
                 a, span {
+                		color: $white;
                     margin: 0;
                     text-decoration: none;
                     padding: 0;
@@ -935,6 +936,8 @@ PAGE NAVI STYLES
                 	font-weight: bold;
                 	border-radius: 100px;
                 	background-color: $mcdc-orange;
+                	color: $mcdc-gray;
+                	
                 }
                 a:hover, a:focus {
                     color: $mcdc-orange;
