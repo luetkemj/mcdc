@@ -12,25 +12,25 @@
     @include use-sprite('key-3');
   }
   &.key-4{
-    // @include use-sprite('key-1');
+    @include use-sprite('key-4');
   }
   &.key-a{
-    // @include use-sprite('key-1');
+    @include use-sprite('key-a');
   }
   &.key-d{
-    // @include use-sprite('key-1');
+    @include use-sprite('key-d');
   }
   &.key-mc{
-    // @include use-sprite('key-1');
-  }
-  &.key-t{
-    // @include use-sprite('key-1');
-  }
-  &.key-v{
-    // @include use-sprite('key-1');
+    @include use-sprite('key-mc');
   }
   &.key-s{
-    // @include use-sprite('key-1');
+    @include use-sprite('key-s');
+  }
+  &.key-t{
+    @include use-sprite('key-t');
+  }
+  &.key-v{
+    @include use-sprite('key-v');
   }
   
 }

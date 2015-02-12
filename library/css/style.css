@@ -1095,7 +1095,7 @@ HEADER STYLES
 }
 /* line 182, ../scss/_base.scss */
 .header .inner-inner-header a {
-  background-image: url('../images/sprites-sa9b6e57b2b.png');
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1109,9 +1109,9 @@ HEADER STYLES
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 182, ../scss/_base.scss */
   .header .inner-inner-header a {
-    background-image: url('../images/sprites-2x-sf373d09357.png');
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
     background-size: 606px 643px;
-    background-position: 0 -578px;
+    background-position: 0 0;
     height: 46px;
     width: 239px;
   }
@@ -1670,8 +1670,8 @@ nav.mainnav li.current-category-ancestor a {
 /* gallery caption styles */
 /* line 891, ../scss/_base.scss */
 .endsign {
-  background-image: url('../images/sprites-sa9b6e57b2b.png');
-  background-position: -350px -200px;
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -462px -200px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -1683,9 +1683,9 @@ nav.mainnav li.current-category-ancestor a {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 891, ../scss/_base.scss */
   .endsign {
-    background-image: url('../images/sprites-2x-sf373d09357.png');
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
     background-size: 606px 643px;
-    background-position: -484px -200px;
+    background-position: -383px -200px;
     height: 29.5px;
     width: 29.5px;
   }
@@ -2355,7 +2355,7 @@ view.
 }
 /* line 5, ../scss/_legend.scss */
 .key.key-1 {
-  background-image: url('../images/sprites-sa9b6e57b2b.png');
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
   background-position: -318px -200px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2366,16 +2366,16 @@ view.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 5, ../scss/_legend.scss */
   .key.key-1 {
-    background-image: url('../images/sprites-2x-sf373d09357.png');
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
     background-size: 606px 643px;
-    background-position: -468px -200px;
+    background-position: -311px -200px;
     height: 8px;
     width: 8px;
   }
 }
 /* line 8, ../scss/_legend.scss */
 .key.key-2 {
-  background-image: url('../images/sprites-sa9b6e57b2b.png');
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
   background-position: -334px -200px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2386,17 +2386,17 @@ view.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 8, ../scss/_legend.scss */
   .key.key-2 {
-    background-image: url('../images/sprites-2x-sf373d09357.png');
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
     background-size: 606px 643px;
-    background-position: -476px -200px;
+    background-position: -319px -200px;
     height: 8px;
     width: 8px;
   }
 }
 /* line 11, ../scss/_legend.scss */
 .key.key-3 {
-  background-image: url('../images/sprites-sa9b6e57b2b.png');
-  background-position: -302px -200px;
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -350px -200px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: block;
@@ -2406,9 +2406,149 @@ view.
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   /* line 11, ../scss/_legend.scss */
   .key.key-3 {
-    background-image: url('../images/sprites-2x-sf373d09357.png');
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
     background-size: 606px 643px;
-    background-position: -460px -200px;
+    background-position: -327px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 14, ../scss/_legend.scss */
+.key.key-4 {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -366px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 14, ../scss/_legend.scss */
+  .key.key-4 {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -335px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 17, ../scss/_legend.scss */
+.key.key-a {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -382px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 17, ../scss/_legend.scss */
+  .key.key-a {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -343px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 20, ../scss/_legend.scss */
+.key.key-d {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -398px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 20, ../scss/_legend.scss */
+  .key.key-d {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -351px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 23, ../scss/_legend.scss */
+.key.key-mc {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -414px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 23, ../scss/_legend.scss */
+  .key.key-mc {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -359px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 26, ../scss/_legend.scss */
+.key.key-s {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -430px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 26, ../scss/_legend.scss */
+  .key.key-s {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -367px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 29, ../scss/_legend.scss */
+.key.key-t {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -302px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 29, ../scss/_legend.scss */
+  .key.key-t {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -303px -200px;
+    height: 8px;
+    width: 8px;
+  }
+}
+/* line 32, ../scss/_legend.scss */
+.key.key-v {
+  background-image: url('../images/sprites-s6ea2a7e8e3.png');
+  background-position: -446px -200px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  /* line 32, ../scss/_legend.scss */
+  .key.key-v {
+    background-image: url('../images/sprites-2x-s4ae440729a.png');
+    background-size: 606px 643px;
+    background-position: -375px -200px;
     height: 8px;
     width: 8px;
   }
