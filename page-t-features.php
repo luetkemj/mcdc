@@ -11,6 +11,7 @@ get_header(); ?>
         $banner_secondary_image = wp_get_attachment_image_src(get_field('banner_secondary_image'), 'full');
         $banner_secondary_text = get_field('banner_secondary_text');
         $feature_sidebar = get_field('feature_sidebar');
+        $solo = ($banner_secondary_text ? null : 'solo');
       ?>
   <div class="wrap">
       <div class="feature-banners clearfix">
@@ -18,7 +19,7 @@ get_header(); ?>
           <img src="<?php echo $banner_primary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
         </div>
         
-        <div class="secondary clearfix">
+        <div class="secondary clearfix <?php echo $solo; ?>">
           <img src="<?php echo $banner_secondary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
 
           <?php echo $banner_secondary_text; ?>

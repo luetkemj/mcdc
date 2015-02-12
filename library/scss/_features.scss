@@ -61,6 +61,12 @@
     img{
       @include span(first 3 of 12);
     }
+    
+    &.solo{
+      img{
+        @include span(12);
+      }
+    }
 
     @include breakpoint( 600px ){
       @include span(last 5 of 12);
