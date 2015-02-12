@@ -2212,6 +2212,12 @@ view.
   float: left;
   margin-right: 2.85714%;
 }
+/* line 66, ../scss/_features.scss */
+.feature-banners .secondary.solo img {
+  width: 40%;
+  float: right;
+  margin-right: 0;
+}
 @media (min-width: 600px) {
   /* line 54, ../scss/_features.scss */
   .feature-banners .secondary {
@@ -2222,7 +2228,7 @@ view.
     padding-top: 20px;
   }
 }
-/* line 73, ../scss/_features.scss */
+/* line 79, ../scss/_features.scss */
 .feature-banners .secondary p {
   margin-top: 0;
 }
@@ -2318,18 +2324,23 @@ view.
 }
 /* line 9, ../scss/_modules.scss */
 .page-template-page-t-module-php .module-header .post-title {
-  width: 82.85714%;
+  width: 65.71429%;
   float: left;
   margin-right: 2.85714%;
+  line-height: 1.5;
 }
 /* line 14, ../scss/_modules.scss */
-.page-template-page-t-module-php .module-header .icon {
-  width: 17.24138%;
-  float: right;
-  margin-right: 0;
-  text-align: right;
+.page-template-page-t-module-php .module-header .description {
+  font-size: .35em;
 }
-/* line 18, ../scss/_modules.scss */
+/* line 19, ../scss/_modules.scss */
+.page-template-page-t-module-php .module-header .icon {
+  width: 6.89655%;
+  float: left;
+  margin-right: 3.44828%;
+  text-align: left;
+}
+/* line 23, ../scss/_modules.scss */
 .page-template-page-t-module-php .module-header .icon img {
   max-height: 72px;
   width: auto;

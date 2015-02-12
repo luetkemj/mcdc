@@ -7,13 +7,18 @@
       margin-bottom: 2em;
 
       .post-title {
-        @include span( first 10 of 12);
+        @include span( first 8 of 12);
+        line-height: 1.5;
       }
       
+      .description{
+        // @include span( last 3 of 12 );
+        font-size: .35em;
+      }
 
       .icon{
-        @include span( last 2 of 10 );
-        text-align: right;
+        @include span( 1 of 10 );
+        text-align: left;
 
         img{
           max-height: 72px;

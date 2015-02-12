@@ -17,10 +17,16 @@
 
                 <header class="article-header module-header">
 
-                  <h1 class="h2 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                  
+
                   <div class="icon">
                     <img src="<?php the_field('icon'); ?>"/>
                   </div>
+                  <h1 class="h2 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            <div class="description">Useful resources to character design and development</div>
+                  </h1>
+                  
+
                   
 
                 </header> <?php // end article header ?>
