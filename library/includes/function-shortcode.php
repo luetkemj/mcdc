@@ -1,18 +1,17 @@
 <?php
-/**
- * Shortcode
- * @author luetkemj - luetkemj@vcu.edu
- */
+// comma seperated values:
+// [legend keys="mc,v,d"]
+// possible values: mc,a,d,t,v,s,1,2,3,4
+function mcdc_legend_shortcode( $atts, $content = null ) {
+  $a = shortcode_atts( array(
+    'keys' => ''
+  ), $atts );
+  $keys = $a['keys'];
+  $keys = explode(",", $keys);
 
-function lmj_slideshow() {
-  $slides = get_post_meta( get_the_ID(), 'page-slides', true ); 
-  	if ($slides){
-
-  		echo "<div class='lmj-slideshow'>";
-  			lmj_flexslider();
-  		echo "</div>";
- 	}
+  foreach( $keys as $key ){
+    $legend .= '<i class="key key-'.$key.'"></i>';
+  }
+  return $legend;
 }
-add_shortcode( 'slideshow', 'lmj_slideshow' );
-
-
+add_shortcode( 'legend', 'mcdc_legend_shortcode' );

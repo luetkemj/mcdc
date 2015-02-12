@@ -67,7 +67,7 @@ if ( !are_we_live() ){
   require_once( 'library/dev-scripts.php' );
 }
 
-
+require_once( 'library/includes/function-shortcode.php' );
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
