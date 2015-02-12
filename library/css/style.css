@@ -2150,6 +2150,7 @@ view.
 .page-template-page-t-features-php .sidebar.feature {
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #d9d9d9;
   border-radius: 10px;
 }
@@ -2169,30 +2170,30 @@ view.
     margin-right: 0;
   }
 }
-/* line 27, ../scss/_features.scss */
+/* line 28, ../scss/_features.scss */
 .page-template-page-t-features-php .sidebar.feature img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 34, ../scss/_features.scss */
+/* line 35, ../scss/_features.scss */
 .feature-banners {
   background-color: #d9d9d9;
   border-radius: 10px;
   line-height: 0;
 }
-/* line 40, ../scss/_features.scss */
+/* line 41, ../scss/_features.scss */
 .feature-banners img {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
 }
-/* line 46, ../scss/_features.scss */
+/* line 47, ../scss/_features.scss */
 .feature-banners .primary {
   padding: 20px;
 }
 @media (min-width: 600px) {
-  /* line 46, ../scss/_features.scss */
+  /* line 47, ../scss/_features.scss */
   .feature-banners .primary {
     width: 57.14286%;
     float: left;
@@ -2200,19 +2201,19 @@ view.
     padding-right: 0;
   }
 }
-/* line 54, ../scss/_features.scss */
+/* line 55, ../scss/_features.scss */
 .feature-banners .secondary {
   padding: 20px;
   padding-top: 0;
   line-height: 1.5;
 }
-/* line 61, ../scss/_features.scss */
+/* line 60, ../scss/_features.scss */
 .feature-banners .secondary img {
   width: 22.85714%;
   float: left;
   margin-right: 2.85714%;
 }
-/* line 66, ../scss/_features.scss */
+/* line 65, ../scss/_features.scss */
 .feature-banners .secondary.solo img {
   width: 100%;
   float: left;
@@ -2220,7 +2221,7 @@ view.
   margin-right: 0;
 }
 @media (min-width: 600px) {
-  /* line 54, ../scss/_features.scss */
+  /* line 55, ../scss/_features.scss */
   .feature-banners .secondary {
     width: 40%;
     float: right;
@@ -2229,7 +2230,7 @@ view.
     padding-top: 20px;
   }
 }
-/* line 79, ../scss/_features.scss */
+/* line 78, ../scss/_features.scss */
 .feature-banners .secondary p {
   margin-top: 0;
 }
