@@ -1,0 +1,36 @@
+.key{
+  display: inline-block !important;
+  margin: 0 2px;
+
+  &.key-1{
+    @include use-sprite('key-1');
+  }
+  &.key-2{
+    @include use-sprite('key-2');
+  }
+  &.key-3{
+    @include use-sprite('key-3');
+  }
+  &.key-4{
+    // @include use-sprite('key-1');
+  }
+  &.key-a{
+    // @include use-sprite('key-1');
+  }
+  &.key-d{
+    // @include use-sprite('key-1');
+  }
+  &.key-mc{
+    // @include use-sprite('key-1');
+  }
+  &.key-t{
+    // @include use-sprite('key-1');
+  }
+  &.key-v{
+    // @include use-sprite('key-1');
+  }
+  &.key-s{
+    // @include use-sprite('key-1');
+  }
+  
+}
