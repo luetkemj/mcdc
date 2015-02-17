@@ -23,7 +23,7 @@
                     <img src="<?php the_field('icon'); ?>"/>
                   </div>
                   <h1 class="h2 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-            <div class="description">Useful resources to character design and development</div>
+            <div class="description"><?php the_field('description'); ?></div>
                   </h1>
                   
 
