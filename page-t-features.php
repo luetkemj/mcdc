@@ -10,8 +10,13 @@ get_header(); ?>
         $banner_primary_image = wp_get_attachment_image_src(get_field('banner_primary_image'), 'full');
         $banner_secondary_image = wp_get_attachment_image_src(get_field('banner_secondary_image'), 'full');
         $banner_secondary_text = get_field('banner_secondary_text');
+        $banner_secondary_link = get_field('banner_secondary_link');
+        $banner_secondary_link_target = get_field('link_target');
         $feature_sidebar = get_field('feature_sidebar');
         $solo = ($banner_secondary_text ? null : 'solo');
+        $target = ($banner_secondary_link_target == 'yes' ? 'target=_blank' : '' );
+
+
       ?>
   <div class="wrap">
       <div class="feature-banners clearfix">
@@ -20,7 +25,9 @@ get_header(); ?>
         </div>
         
         <div class="secondary clearfix <?php echo $solo; ?>">
-          <img src="<?php echo $banner_secondary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
+          <?php if( $banner_secondary_link ){ echo "<a href='{$banner_secondary_link}' {$target}>"; } ?>
+            <img src="<?php echo $banner_secondary_image[0]; ?>" alt="<?php echo get_the_title(get_field('image_test')) ?>" />
+          <?php if( $banner_secondary_link ){ echo "</a>"; } ?>
 
           <?php echo $banner_secondary_text; ?>
         </div>
