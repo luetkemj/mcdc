@@ -30,7 +30,8 @@ require_once( 'library/bones.php' ); // if you remove this, bones will break
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
-require_once( 'library/custom-post-type-contributer.php' ); // you can disable this if you like
+require_once( 'library/custom-post-type-contributer.php' );
+require_once( 'library/custom-post-type-resource.php' ); // you can disable this if you like
 // require_once( 'library/custom-post-taxonomies.php' );
 
 /*
@@ -312,5 +313,40 @@ function are_we_live(){
 
 
 require_once('library/includes/acffields.php');
+
+
+
+
+
+
+
+
+function wp_api_encode_acf($data,$post,$context){
+	$data['meta'] = array_merge($data['meta'],get_fields($post['ID']));
+	return $data;
+}
+
+
+function benson_cdata(){
+
+	global $post;
+	$wpjson_url = get_field( 'wpjson_url', $post->ID );
+
+	echo "<script type='text/javascript'>
+				//<![CDATA[
+				var wpjson_url = '$wpjson_url';
+				//]]>
+				</script>";
+}
+
+
+if( function_exists('get_fields') ){
+	add_filter('json_prepare_post', 'wp_api_encode_acf', 10, 3);
+
+	add_action('wp_head', 'benson_cdata');
+}
+
+
+
 
 ?>

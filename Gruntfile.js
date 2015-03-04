@@ -28,11 +28,11 @@ module.exports = function(grunt) {
                 files: ['library/css/**/*.css']
             },
             js: {
-                files: ['library/js/**/*.js'],
+                files: ['library/js/**/*.js','!library/js/main.js','!library/js/main.min.js'],
                 tasks: ['concat']
             },
             livereload: {
-                files: ['**/*.html', '**/*.php', '**/*.js', '**/*.css', '!**/node_modules/**'],
+                files: ['**/*.html', '**/*.php', 'library/js/main.js', '**/*.css', '!**/node_modules/**'],
                 options: { livereload: true }
             }
         },
@@ -88,7 +88,9 @@ module.exports = function(grunt) {
                 src: [
                     'library/js/libs/*.js', // All JS in the libs folder
                     'library/js/scripts.js',  // This specific file
-                    '!library/js/libs/modernizr.custom.min.js'
+                    '!library/js/libs/modernizr.custom.min.js',
+                    '!library/js/main.js',
+                    '!library/js/main.min.js'
                 ],
                 dest: 'library/js/main.js',
             }
