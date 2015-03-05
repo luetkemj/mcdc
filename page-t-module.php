@@ -29,29 +29,40 @@
                 </header> <?php // end article header ?>
 
 
- <section class="entry-content clearfix" itemprop="articleBody">
 
 
-
+<section class="entry-content clearfix" itemprop="articleBody">
 
 
 <?php if( get_field( 'wpjson_url', $post->ID ) ){ ?>
 
   <div ng-app="benson">
-    <div ng-controller="MainController">
+    <div class="maincontroller cf" ng-controller="MainController">
 
-      Sort by:
-      <button class="button" ng-click="sortbyTitle()">Title</button>
-      <button class="button" ng-click="sortbyPriority()">Priority</button>
-      <br>
-      Search By:
-      <input ng-model="searchText.title">
+    <div class="sortables">
+      <span>SORT BY:</span>
+      <span ng-class="sortbyTitleActive" ng-click="sortbyTitle()">Title</span>
+      <span ng-class="sortbyPriorityActive" ng-click="sortbyPriority()">Priority</span>
+      <input ng-model="searchText.title" placeholder="search for specific resources...">
+    </div>
+
+      <div ng-show="spinner" class="spinner-wrap">
+        <div class="spinner">
+          <div class="ball"></div>
+          <p>LOADING</p>
+        </div>
+      </div>
+
 
 <div class="cf"></div>
 
       <div class="colone">
-        <p ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText">
+
+
           <a 
+            class="animate-repeat resource"
+            ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText"
+            
             ng-show="resource.meta.content_owner"
             href="{{resource.meta.external_link}}" 
             target="{{resource.meta.external_link ? '_blank' : '_self'}}">
@@ -61,14 +72,17 @@
             <i ng-repeat="owner in resource.meta.content_owner" class="key {{owner}}"></i>
             <i ng-repeat="cost in resource.meta.cost" class="key {{cost}}"></i>
             
-            {{resource.title}}
+            <span ng-cloak ng-bind-html="resource.title">{{resource.title}}</span>
           </a>
-        </p>
+
       </div>
 
       <div class="coltwo">
-        <p ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText">
-          <a 
+
+          <a
+            class="animate-repeat resource"
+            ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText" 
+            
             ng-hide="resource.meta.content_owner"
             href="{{resource.meta.external_link}}" 
             target="{{resource.meta.external_link ? '_blank' : '_self'}}">
@@ -78,22 +92,18 @@
             <i ng-repeat="owner in resource.meta.content_owner" class="key {{owner}}"></i>
             <i ng-repeat="cost in resource.meta.cost" class="key {{cost}}"></i>
             
-            {{resource.title}}
+            <span ng-cloak ng-bind-html="resource.title">{{resource.title}}</span>
           </a>
-        </p>
+
       </div>
 
-      <div class="colthree">
+      <div class="colthree" style="text-align:right">
         <img class="alignnone size-full wp-image-4664" alt="FWEB4" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/FWEB4.jpg" width="241" height="267" />
         
         <a title="Submit Your Links" href="http://www.makingcomics.com/rd/submit-links/" target="_blank"><img class="alignnone size-full wp-image-4756" alt="submit2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/submit2.jpg" width="241" height="45" /></a>
         
         <a title="Edit Content" href="http://www.makingcomics.com/rd/edit-content/"><img class="alignnone size-full wp-image-4757" alt="editbutton2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/editbutton2.jpg" width="241" height="45" /></a>
       </div>
-
-
-
-
 
     </div>
   </div>

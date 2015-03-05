@@ -144,12 +144,14 @@ function bones_scripts_and_styles() {
 
 		wp_register_script( 'angular', '//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.js', array(), '', false );
 		wp_register_script( 'angular-sanitize', '//ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular-sanitize.js', array('angular'), '', false );
+		wp_register_script( 'angular-animate', '//code.angularjs.org/1.3.12/angular-animate.js', array('angular'), '', false );
 
 
-		wp_register_script( 'benson-app', get_stylesheet_directory_uri() . '/library/angular/app.js', array('angular'), '', true );
+
+		wp_register_script( 'benson-app', get_stylesheet_directory_uri() . '/library/angular/app.js', array('angular','angular-animate'), '', true );
 		wp_register_script( 'benson-main-controller', get_stylesheet_directory_uri() . '/library/angular/controllers/MainController.js', array('angular'), '', true );
 		wp_register_script( 'benson-wp-json', get_stylesheet_directory_uri() . '/library/angular/services/wpjson.js', array('angular'), '', true );
-		wp_register_script( 'filter-ng-order-object-by', get_stylesheet_directory_uri() . '/library/angular/filters/ng-order-object-by.js', array('angular'), '', true );
+
 
 
 		// enqueue styles and scripts
@@ -170,7 +172,6 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'benson-app' );
 		wp_enqueue_script( 'benson-main-controller' );
 		wp_enqueue_script( 'benson-wp-json' );
-		wp_enqueue_script( 'filter-ng-order-object-by' );
 
 	}
 }

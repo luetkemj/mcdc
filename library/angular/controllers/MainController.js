@@ -1,47 +1,38 @@
 // Code goes here
 (function () {
 
-    var app = angular.module("benson", ['ngSanitize', 'ngOrderObjectBy']);
+    var app = angular.module("benson", ['ngSanitize', 'ngAnimate']);
 
     var MainController = function ($scope, wpjson) {
 
       var onDataComplete = function(data){
         $scope.data = data;
+        $scope.spinner = false;
       }
 
       var onError = function (response) {
         $scope.error = 'Could not fetch data because "' + response + '"';
       };
 
-      var sortbyTitleOrder = true;
-      var sortbyPriorityOrder = true;
 
-      var sortbyTitle = function(data){
-        if ( sortbyTitleOrder ) {
-          $scope.resourceSortOrder = "+title";
-          sortbyTitleOrder = false;
-
-        } else {
-          $scope.resourceSortOrder = "-title";
-          sortbyTitleOrder = true;
-
-        }
+      var sortbyTitle = function(){
+        $scope.resourceSortOrder = "+title";
+        $scope.sortbyTitleActive = 'active';
+        $scope.sortbyPriorityActive = '';
       };
 
       var sortbyPriority = function(){
-        if ( sortbyPriorityOrder ) {
-          $scope.resourceSortOrder = "+meta.priority";
-          sortbyPriorityOrder = false;
-        } else {
-          $scope.resourceSortOrder = "-meta.priority";
-          sortbyPriorityOrder = true;
-        }
+        $scope.resourceSortOrder = "+meta.priority";
+        $scope.sortbyTitleActive = '';
+        $scope.sortbyPriorityActive = 'active';
       };
 
 
       wpjson.getData().then(onDataComplete, onError);
 
-      $scope.resourceSortOrder = "+title";
+      $scope.sortbyPriorityActive = 'active';
+      $scope.spinner = true;
+      $scope.resourceSortOrder = "+meta.priority";
       $scope.sortbyTitle = sortbyTitle;
       $scope.sortbyPriority = sortbyPriority;
     };
