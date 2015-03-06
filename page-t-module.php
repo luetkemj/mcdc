@@ -119,13 +119,6 @@
   </div>
   
   <div class="colthree">
-    <img class="alignnone size-full wp-image-4664" alt="FWEB4" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/FWEB4.jpg" width="241" height="267" />
-    
-    <a title="Submit Your Links" href="http://www.makingcomics.com/rd/submit-links/" target="_blank"><img class="alignnone size-full wp-image-4756" alt="submit2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/submit2.jpg" width="241" height="45" /></a>
-    
-    <a title="Edit Content" href="http://www.makingcomics.com/rd/edit-content/"><img class="alignnone size-full wp-image-4757" alt="editbutton2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/editbutton2.jpg" width="241" height="45" /></a>
-    
-
     <?php the_field('column_three'); ?>
   </div>
 

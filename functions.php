@@ -330,11 +330,13 @@ function wp_api_encode_acf($data,$post,$context){
 function benson_cdata(){
 
 	global $post;
+	$site_url = get_home_url();
 	$wpjson_url = get_field( 'wpjson_url', $post->ID );
+	$endpoint = $site_url .'/'. $wpjson_url;
 
 	echo "<script type='text/javascript'>
 				//<![CDATA[
-				var wpjson_url = '$wpjson_url';
+				var wpjson_url = '$endpoint';
 				//]]>
 				</script>";
 }
