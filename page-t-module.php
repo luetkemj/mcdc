@@ -64,7 +64,7 @@
             ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText"
             
             ng-show="resource.meta.content_owner"
-            href="{{resource.meta.external_link}}" 
+            href="{{resource.meta.external_link ? resource.meta.external_link : resource.meta.mc_link.guid}}" 
             target="{{resource.meta.external_link ? '_blank' : '_self'}}">
             
 

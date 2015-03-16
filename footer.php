@@ -45,7 +45,7 @@
 					</div>
 
 
-					<p class="source-org copyright clear">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright clear">&copy; <?php echo date('Y'); ?> Making Comics Worldwide</p>
 					<p>
 						<a target="blank" href="https://plus.google.com/+Makingcomics" rel="publisher">Google+</a> &nbsp; <a target="blank" href="https://www.facebook.com/makingcomics">Facebook</a> &nbsp; <a target="blank" href="https://twitter.com/Making_Comics">Twitter</a> &nbsp; <a target="blank" href="http://makingcomicsdotcom.tumblr.com/">Tumblr</a>
 					</p>
