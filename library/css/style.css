@@ -2333,7 +2333,8 @@ view.
 }
 /* line 14, ../scss/_modules.scss */
 .page-template-page-t-module-php .module-header .description {
-  font-size: .35em;
+  font-size: .45em;
+  text-transform: none;
 }
 /* line 19, ../scss/_modules.scss */
 .page-template-page-t-module-php .module-header .icon {
