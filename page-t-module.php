@@ -34,7 +34,7 @@
 <section class="entry-content clearfix" itemprop="articleBody">
 
 
-<?php if( get_field( 'wpjson_url', $post->ID ) ){ ?>
+<?php if( get_field( 'module', $post->ID ) ){ ?>
 
   <div ng-app="benson">
     <div class="maincontroller cf" ng-controller="MainController">
