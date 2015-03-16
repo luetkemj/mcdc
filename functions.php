@@ -331,8 +331,9 @@ function benson_cdata(){
 
 	global $post;
 	$site_url = get_home_url();
-	$wpjson_url = get_field( 'wpjson_url', $post->ID );
-	$endpoint = $site_url .'/'. $wpjson_url;
+	$json_query = '/wp-json/posts?type=resource&filter[posts_per_page]=-1&filter[module]=';
+  $module = get_field('module'); 
+	$endpoint = $site_url . $json_query . $module->slug;
 
 	echo "<script type='text/javascript'>
 				//<![CDATA[
@@ -347,8 +348,6 @@ if( function_exists('get_fields') ){
 
 	add_action('wp_head', 'benson_cdata');
 }
-
-
 
 
 ?>

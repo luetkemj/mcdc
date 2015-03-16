@@ -618,6 +618,29 @@ register_field_group(array (
       'readonly' => 0,
       'disabled' => 0,
     ),
+    array (
+      'key' => 'field_5506f0bd78d16',
+      'label' => 'Module',
+      'name' => 'module',
+      'prefix' => '',
+      'type' => 'taxonomy',
+      'instructions' => 'Select the Resource Module associated with this page to activate fancy sorting.
+
+Do not select before all resources associated with this page has been converted to individual Resources.',
+      'required' => 0,
+      'conditional_logic' => 0,
+      'wrapper' => array (
+        'width' => '',
+        'class' => '',
+        'id' => '',
+      ),
+      'taxonomy' => 'module',
+      'field_type' => 'select',
+      'allow_null' => 1,
+      'load_save_terms' => 0,
+      'return_format' => 'object',
+      'multiple' => 0,
+    ),
   ),
   'location' => array (
     array (
