@@ -47,7 +47,7 @@
 
 					<p class="source-org copyright clear">&copy; <?php echo date('Y'); ?> Making Comics Worldwide</p>
 					<p>
-						<a target="blank" href="https://plus.google.com/+Makingcomics" rel="publisher">Google+</a> &nbsp; <a target="blank" href="https://www.facebook.com/makingcomics">Facebook</a> &nbsp; <a target="blank" href="https://twitter.com/Making_Comics">Twitter</a> &nbsp; <a target="blank" href="http://makingcomicsdotcom.tumblr.com/">Tumblr</a>
+						<a target="blank" href="https://plus.google.com/+Makingcomics" rel="publisher">Google+</a> &nbsp; <a target="blank" href="https://www.facebook.com/makingcomics">Facebook</a> &nbsp; <a target="blank" href="https://twitter.com/Making_Comics">Twitter</a>
 					</p>
 					<p>Site Design + Development by <a href="http://luetkemj.com" target="_blank">Mark Luetke</a>, <a href="http://www.theheadcomic.com" target="_blank">Patrick Yurick</a>, and <a href="http://www.kevincullenauthor.com/" target="_blank">Kevin Cullen</a></p>
 				</div> <?php // end #inner-footer ?>
