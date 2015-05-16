@@ -97,8 +97,11 @@ $frontpage_id = get_option('page_on_front');
                   $module_title = get_the_title($module_page);
                   $module_link = get_post_permalink($module_page);
                   $module_icon = get_field('icon', $module_page);
+                  $module_description = get_field('description', $module_page);
                   ?>
-                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a></li>
+                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a>
+                  <?php echo $module_description; ?>
+                  </li>
                 <?php endwhile; ?>
                 
                 </ul>
@@ -114,8 +117,11 @@ $frontpage_id = get_option('page_on_front');
                   $module_title = get_the_title($module_page);
                   $module_link = get_post_permalink($module_page);
                   $module_icon = get_field('icon', $module_page);
+                  $module_description = get_field('description', $module_page);
                   ?>
-                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a></li>
+                  <li><a href="<?php echo $module_link; ?>"><img src="<?php echo $module_icon; ?>" alt="<?php echo $module_title; ?>" title="<?php echo $module_title; ?>"/><?php echo $module_title; ?></a>
+                  <?php echo $module_description; ?>
+                  </li>
                 <?php endwhile; ?>
                 
                 </ul>
