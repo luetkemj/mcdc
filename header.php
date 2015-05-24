@@ -21,11 +21,11 @@
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<!-- <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png"> -->
 		<!-- <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png"> -->
-		
+
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
-		
+
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<!-- <meta name="msapplication-TileColor" content="#f01d4f"> -->
 		<!-- <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png"> -->
@@ -36,13 +36,15 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
+		<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
 <!-- butter -->
 		<?php wp_head(); ?>
 <!-- bread -->
 	</head>
 
-<?php 
-$background_image = get_field('background_image', 'option'); 
+<?php
+$background_image = get_field('background_image', 'option');
 if ( $background_image ) {
 	$background_style = "style='background-image:url(".$background_image.");'";
 }
@@ -62,11 +64,12 @@ if ( $background_image ) {
 				<div class="inner-header clearfix">
 
 					<div class="inner-inner-header clearfix">
-						
+
 						<div class="logo">
-							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a>
+							<a class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">makingcomics.com</a> <span class="tagline">Comics Education For Everyone</span>
 						</div>
-					
+
+
 					</div>
 
 				</div>

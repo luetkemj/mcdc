@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template Name: Module
 ?>
 
@@ -9,7 +9,7 @@
         <div id="inner-content" class="wrap clearfix">
 
             <div id="main" class="eightcol clearfix" role="main">
-             
+
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -17,7 +17,7 @@
 
                 <header class="article-header module-header">
 
-                  
+
 
                   <div class="icon">
                     <img src="<?php the_field('icon'); ?>"/>
@@ -25,7 +25,7 @@
                   <h1 class="h2 post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                   <div class="description"><?php the_field('description'); ?></div>
                   </h1>
-                
+
                 </header> <?php // end article header ?>
 
 
@@ -59,19 +59,19 @@
       <div class="colone">
 
 
-          <a 
+          <a
             class="animate-repeat resource"
             ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText"
-            
+
             ng-show="resource.meta.content_owner"
-            href="{{resource.meta.external_link ? resource.meta.external_link : resource.meta.mc_link.guid}}" 
+            href="{{resource.meta.external_link ? resource.meta.external_link : resource.meta.mc_link.guid}}"
             target="{{resource.meta.external_link ? '_blank' : '_self'}}">
-            
+
 
             <i ng-repeat="priority in resource.meta.priority" class="key {{priority}}"></i>
             <i ng-repeat="owner in resource.meta.content_owner" class="key {{owner}}"></i>
             <i ng-repeat="cost in resource.meta.cost" class="key {{cost}}"></i>
-            
+
             <span ng-cloak ng-bind-html="resource.title">{{resource.title}}</span>
           </a>
 
@@ -81,27 +81,27 @@
 
           <a
             class="animate-repeat resource"
-            ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText" 
-            
+            ng-repeat="resource in data | orderBy:resourceSortOrder | filter:searchText"
+
             ng-hide="resource.meta.content_owner"
-            href="{{resource.meta.external_link}}" 
+            href="{{resource.meta.external_link}}"
             target="{{resource.meta.external_link ? '_blank' : '_self'}}">
-            
+
 
             <i ng-repeat="priority in resource.meta.priority" class="key {{priority}}"></i>
             <i ng-repeat="owner in resource.meta.content_owner" class="key {{owner}}"></i>
             <i ng-repeat="cost in resource.meta.cost" class="key {{cost}}"></i>
-            
+
             <span ng-cloak ng-bind-html="resource.title">{{resource.title}}</span>
           </a>
 
       </div>
 
-      <div class="colthree" style="text-align:right">
+      <div class="colthree">
         <img class="alignnone size-full wp-image-4664" alt="FWEB4" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/FWEB4.jpg" width="241" height="267" />
-        
+
         <a title="Submit Your Links" href="http://www.makingcomics.com/rd/submit-links/" target="_blank"><img class="alignnone size-full wp-image-4756" alt="submit2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/submit2.jpg" width="241" height="45" /></a>
-        
+
         <a title="Edit Content" href="http://www.makingcomics.com/rd/edit-content/"><img class="alignnone size-full wp-image-4757" alt="editbutton2" src="http://www.makingcomics.com/rd/wp/wp-content/uploads/2015/02/editbutton2.jpg" width="241" height="45" /></a>
       </div>
 
@@ -117,14 +117,14 @@
   <div class="coltwo">
     <?php the_field('column_two'); ?>
   </div>
-  
+
   <div class="colthree">
     <?php the_field('column_three'); ?>
   </div>
 
 <?php } ?>
 
-               
+
 
                 </section> <?php // end article section ?>
 
@@ -169,7 +169,7 @@
             <?php endif; ?>
 
           </div> <?php // end #main ?>
-          
+
         </div> <?php // end #inner-content ?>
 
       </div> <?php // end #content ?>

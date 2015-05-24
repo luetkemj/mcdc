@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
- 
+
     // 1. All configuration goes here
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
- 
+
         compass: {
           dist: {
             options: {
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
             //     proxy: "vcuartsbones.dev"
             // }
         },
- 
+
         autoprefixer: {
             dist: {
                 files: {
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
                 }
             }
         },
- 
+
         cmq: {
             your_target: {
                 files: {
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
                 }
             }
         },
- 
+
         cssmin: {
             combine: {
                 files: {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
                 }
             }
         },
- 
+
         jshint: {
             all: [
                 'library/js/*.js',
@@ -82,8 +82,8 @@ module.exports = function(grunt) {
                 jshintrc: 'library/js/.jshintrc'
             }
         },
- 
-        concat: {  
+
+        concat: {
             footer: {
                 src: [
                     'library/js/libs/*.js', // All JS in the libs folder
@@ -95,14 +95,14 @@ module.exports = function(grunt) {
                 dest: 'library/js/main.js',
             }
         },
- 
+
         uglify: {
             footer: {
                 src: 'library/js/main.js',
                 dest: 'library/js/main.min.js'
             }
         },
- 
+
         imagemin: {
             dynamic: {
                 files: [{
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
- 
+
         devcode : {
           options :
           {
@@ -138,43 +138,43 @@ module.exports = function(grunt) {
 
         concurrent: {
             watch: {
-                tasks: ['watch', 'compass', 'browserSync'],
+                tasks: ['watch', 'compass'],
                 options: {
                     logConcurrentOutput: true
                 }
             }
-        } 
+        }
     });
- 
+
     // 3. Where we tell Grunt what plugins to use
- 
+
     // Sass
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
- 
+
     // JS
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
- 
+
     // Images
     grunt.loadNpmTasks('grunt-contrib-imagemin');
- 
+
     // Clean
     grunt.loadNpmTasks('grunt-contrib-clean');
- 
+
     // DevCode
     grunt.loadNpmTasks('grunt-devcode');
-   
+
     // Browser Reload + File Watch
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
- 
+
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('init', ['build']);
-    grunt.registerTask('dev', ['browserSync','watch']);
+    grunt.registerTask('dev', ['watch']);
     grunt.registerTask('build', ['imagemin', 'compass:dist', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify']);
 };

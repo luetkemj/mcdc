@@ -161,7 +161,7 @@ HEADER STYLES
 .header {
 
 	position: relative;
-	
+
 	.inner-header{
 		padding: 25px 0;
 		background-color: $white;
@@ -173,23 +173,39 @@ HEADER STYLES
 
 	.inner-inner-header{
 		@include container();
-		
-		// .logo {
-		// 	@include breakpoint( $breakpoint-768 ){
-		// 		@include span(first 4 of 12);
-		// 	}
-			
+
 			a{
 				@include use-sprite('smalllogo');
 				background-repeat: no-repeat;
 				position: relative;
 				margin: 0 auto;
-				// @include breakpoint( $breakpoint-768 ){
-				// 	margin: 0 0 0 0;					
-				// 	left: -6px;
-				// }
 			}
 
+
+			.logo{
+				a{
+					@include breakpoint( 530px ){
+						display: inline-block;
+						top: 3px;
+						margin-left: 10px;
+					}
+				}
+
+				.tagline{
+					font-family: 'Reenie Beanie', cursive;
+					color: #c94b10;
+					font-size: 1.5em;
+					text-align: center;
+					display: block;
+
+					@include breakpoint( 530px ){
+						position: relative;
+					  	top: -14px;
+					  	left: 12px;
+					  	display: inline;
+					}
+				}
+			}
 		}
 
 
@@ -197,13 +213,13 @@ HEADER STYLES
 	// 	position: absolute;
 	// 	top: 4px;
 	// 	right: 10px;
-	// 	@include span( last 8 of 12 );	
+	// 	@include span( last 8 of 12 );
 
 	// 	@include breakpoint( $breakpoint-768 ){
 	// 		margin-top: 4px;
 	// 		position: static;
 	// 	}
-		
+
 
 	// 	label{
 	// 		display: none;
@@ -265,7 +281,7 @@ nav{
 	font-variant: normal;
 	font-weight: normal;
 	text-rendering: optimizelegibility;
-	
+
 	&.topnav li a,
 	&.mainnav li a,
 	a {
@@ -296,7 +312,7 @@ nav{
 	&.topnav{
 		margin-bottom: 0px;
 		min-height: 43px;
-	
+
 		background: rgb(255, 255, 255); /* fallback */
 		background: rgba(255, 255, 255, 0.7);
 
@@ -322,7 +338,7 @@ nav{
 
 		// background: $mcdc-gray;
 		background: #330000;
-		
+
 		> ul{
 			display: none;
 			padding: 1em 0;
@@ -340,7 +356,7 @@ nav{
 	li a{
 		font-size: 1.25em;
 	}
-	
+
 	ul.social{
 		// float: right;
 		margin: 0 0 0 0;
@@ -349,7 +365,7 @@ nav{
 		top: -1em;
 		right: 10px;
 		display: block;
-	
+
 
 		.lsf{
 			text-transform: lowercase;
@@ -361,7 +377,7 @@ nav{
 				margin: 0 .5em 0 0;
 				padding: 0 0 0 0;
 				font-size: 1.8em;
-			}		
+			}
 		}
 	}
 
@@ -370,7 +386,7 @@ nav{
 
 
 
-@include breakpoint($breakpoint-768){	
+@include breakpoint($breakpoint-768){
 		.topnavbtn,
 		.mainnavbtn{
 			display: none;
@@ -381,7 +397,7 @@ nav{
 			padding-bottom: 0px;
 			min-height: 0px;
 			margin-top: -4px;
-			
+
 
 			ul{
 				display: block;
@@ -391,7 +407,7 @@ nav{
 				text-align: center;
 				padding-bottom: 0;
 			}
-		
+
 			li{
 				display: inline-block;
 			}
@@ -409,7 +425,7 @@ nav{
 		&.mainnav{
 			font-weight: 700;
 			min-height: inherit;
-			
+
 			> ul{
 				display: block;
 				padding: 0 0;
@@ -539,7 +555,7 @@ nav{
 		li.current_page_item,
 		li.current-page-ancestor {
 			a {}
-		}  /* end current highlighters */	
+		}  /* end current highlighters */
 
 	}
 
@@ -592,19 +608,26 @@ POSTS & CONTENT STYLES
 
 
 .colone{
-	@include span(first 4 of 12);
+	@include breakpoint( 550px ){
+		@include span(first 4 of 12);
+	}
+
 }
 
 .coltwo{
-	@include span(4 of 12);
+	@include breakpoint( 550px ){
+		@include span(4 of 12);
+	}
 }
 
 .colthree{
-	@include span(last 4 of 12);
+	@include breakpoint( 550px ){
+		@include span(last 4 of 12);
+	}
 }
 
 		.hentry {
-		
+
 		.tags,
 		.comments,
 		.categories{}
@@ -690,7 +713,7 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
-			
+
 			p {
 				margin: 0 0 1.5em 0;
 			}
@@ -699,7 +722,7 @@ POSTS & CONTENT STYLES
 			ul, ol, table, dl {}
 
 			ul, ol {
-				
+
 				margin: 0 0 1.5em 1.5em;
 
 				li {
@@ -751,24 +774,24 @@ POSTS & CONTENT STYLES
 			*/
 			.alignleft, img.alignleft {
 				@include breakpoint( $breakpoint-481 ){
-					margin-right: 1.5em; 
-					display: inline; 
-					float: left; 
+					margin-right: 1.5em;
+					display: inline;
+					float: left;
 				}
 			}
 			.alignright, img.alignright {
 				@include breakpoint( $breakpoint-481 ){
-					margin-left: 1.5em; 
-					display: inline; 
-					float: right; 
+					margin-left: 1.5em;
+					display: inline;
+					float: right;
 				}
 			}
 			.aligncenter, img.aligncenter {
 				@include breakpoint( $breakpoint-481 ){
-					margin-right: auto; 
-					margin-left: auto; 
-					display: block; 
-					clear: both; 
+					margin-right: auto;
+					margin-left: auto;
+					display: block;
+					clear: both;
 				}
 			}
 
@@ -808,7 +831,7 @@ POSTS & CONTENT STYLES
 	.kittens{
 		margin-left: 1em;
 	}
-	
+
 	.cat,
 	.kitten{
 		font-size: .875em;
@@ -937,7 +960,7 @@ PAGE NAVI STYLES
                 	border-radius: 100px;
                 	background-color: $mcdc-orange;
                 	color: $mcdc-gray;
-                	
+
                 }
                 a:hover, a:focus {
                     color: $mcdc-orange;
@@ -1003,7 +1026,7 @@ COMMENT STYLES
 		ul.children {
 			margin: 0 0 0 .5em;
 			// background-color: darken($white, 6%);
-			
+
 			li {background-color: $white;}
 
 			/* variations */
@@ -1332,7 +1355,7 @@ FOOTER STYLES
 	clear: both;
 	text-align: center;
 	padding-top: 2em;
-	
+
 	background: rgb(255, 255, 255); /* fallback */
 	background: rgba(255, 255, 255, 0.7);
 }
@@ -1376,7 +1399,7 @@ FOOTER STYLES
 // #width {
 //   @include transition-property(width);
 // }
- 
+
 // #width:hover {
 //   width: 80px;
 // }
@@ -1392,9 +1415,9 @@ FOOTER STYLES
 	opacity: .5;
 }
 
-.entry-content img, 
-.entry-content iframe, 
-.entry-content object, 
+.entry-content img,
+.entry-content iframe,
+.entry-content object,
 .entry-content embed {
         max-width: 100%;
 }
