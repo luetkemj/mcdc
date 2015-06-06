@@ -183,6 +183,8 @@ HEADER STYLES
 
 
 			.logo{
+				text-align: center;
+
 				a{
 					@include breakpoint( 530px ){
 						display: inline-block;
@@ -1354,7 +1356,7 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	text-align: center;
-	padding-top: 2em;
+	padding: 2em 1em;
 
 	background: rgb(255, 255, 255); /* fallback */
 	background: rgba(255, 255, 255, 0.7);
@@ -1362,12 +1364,28 @@ FOOTER STYLES
 
 #inner-footer{
 	.sidebar{
-		@include span(3 of 12);
+		@include breakpoint( 430px ){
+			@include gallery(6 of 12);
+		}
+
+		@include breakpoint( 630px ){
+			@include gallery(3 of 12);
+		}
+
+		h4{
+			margin-top: .5em;
+		}
+
+		.widget{
+			margin-bottom: 1em;
+		}
 	}
 
-	.sidebar:last-of-type{
-		@include span( last 3 of 12);
-	}
+	// .sidebar:last-of-type{
+	// 	@include breakpoint( 630px ){
+	// 		@include span( last 3 of 12);
+	// 	}
+	// }
 }
 
 	/*
