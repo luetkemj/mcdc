@@ -685,6 +685,14 @@ POSTS & CONTENT STYLES
 			}
 		}
 
+		.single-resource .post-title a{
+			color: $mcdc-orange;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
 		.single-title {}
 
 		.page-title {}
